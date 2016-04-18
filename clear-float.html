@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动</title>
+	<style>
+	ul,li{
+		margin: 0;
+		padding:0;
+		list-style: none
+	}
+	.list{
+		width:600px;
+		border: 1px solid red;
+		margin: 0 auto;
+	}
+	.list li{
+		width:100px;
+		height:100px;
+		background: #ccc;
+		margin:10px;
+		float: left;
+	}
+	.clf:after,.clf:before{
+		content:"";
+		display: block;
+		clear:both;
+		width:50px;
+		height:50px;
+		background:url(1.jpg);
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<a href="mao.html">001</a>
+	<ul class="list clf">
+		<li><a href="mao.html#inner">01</a></li>
+		<li>02</li>
+		<li>03</li>
+		<li>04</li>
+		<li>05</li>
+		<li>06</li>
+		<li>07</li>
+		<li>08</li>
+		<li>09</li>
+		<li>10</li>
+		<!-- 第一种清除浮动的方法 -->
+		<!-- <div style="clear:both"></div> -->
+	</ul>
+	<ul class="list clf">
+		<li>01</li>
+		<li>02</li>
+		<li>03</li>
+		<li>04</li>
+		<li>05</li>
+		<li>06</li>
+		<li>07</li>
+		<li>08</li>
+		<li>09</li>
+		<li>10</li>
+		<!-- 第一种清除浮动的方法 -->
+		<!-- <div style="clear:both"></div> -->
+	</ul>
+</body>
+</html>

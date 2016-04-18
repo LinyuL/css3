@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>css3同辈选择器</title>
+	<style>
+	/* .one+li{
+		background: red;
+	} */
+	/* .one~li{
+	 	background: red;
+	 } */ 
+	/* .one~p{
+		background: red;
+	}  */
+	/* .one:nth-of-type(5)~li{
+		background: red;
+	} */
+	/* .one:first-of-type{
+		background: blue
+	} */
+	/* .one:last-of-type{
+		background: yellow
+	} */
+	/* p:only-of-type{
+		background: yellow
+	} */
+	li:nth-last-of-type(2n){
+		background: blue
+	}
+
+
+
+
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li class="one">01</li>
+		<!-- <p>kkk</p> -->
+		<li>02</li>
+		<li>03</li>
+		<li>04</li>
+		<li class="one">05</li>
+		<li>06</li>
+		<li>07</li>
+		<li>08</li>
+		<li>09</li>
+		<li>10</li>
+		<li class="one">05</li>
+	</ul>
+	<ul class="list">
+		<li>11</li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

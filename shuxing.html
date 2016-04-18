@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器</title>
+	<style>
+	#list{
+		width: 500px;
+		height:400px;
+	}
+	#list li{
+		width:300px;
+		height:50px;
+		margin: 20px;
+	}
+	[class]{
+		border:1px solid #ccc;
+		background: red
+	}
+	[class=one]{
+		background: pink
+	}
+	[title~="hello"]{
+		border: 5px solid red;
+	}
+	/*有缺陷*/
+	[title|="hello"]{
+		border: 5px solid blue;
+	}
+	[title^="h"]{
+		border: 2px dashed yellow;
+	}
+	/* [href^=http]{
+		font-weight: bold;
+	}
+	[href^=https]{
+		font-weight: bold;
+	}
+	[href^=ftp]{
+		font-weight: bold;
+	}
+	[href^=mailto]{
+		font-weight: bold;
+	} */
+	[href$=com]{
+		font-weight: bold;
+	}
+	/* [href*="//"]{
+		font-weight: bold;
+	} */
+	</style>
+</head>
+<body>
+	<ul id="list">
+		<li class="one" title="hello">01</li>
+		<li class="two" title="hello world">02</li>
+		<li>03</li>
+	</ul>
+	<ul>
+		<li><a href="http://www.baidu.com">百度一下</a></li>
+		<li><a href="https://www.taobao.com">淘宝</a></li>
+		<li><a href="ftp://">文件传输协议</a></li>
+		<li><a href="mailto:157888@qq.com">mailto</a></li>
+	</ul>
+</body>
+</html>

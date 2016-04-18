@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>伪类选择器</title>
+	<style>
+	input:focus{
+		border: 1px dashed red;
+		outline: none;
+	}
+	p{
+		width: 500px;
+		height:300px;
+		border: 1px solid red;
+		margin:0 auto;
+	}
+	p:first-letter{
+		font-size: 32px;
+		color:red;
+	}
+	p:first-line{
+		background: #ccc
+	}
+	p:before{
+		content:"123";
+	}
+	p:after{
+		content:"456";
+	}
+
+	</style>
+</head>
+<body>
+	<input type="text" placeholder="用户名">
+	<input type="password" placeholder="密码">
+	<p>
+		继承性
+		后代元素会继承前辈元素的一些属性和样式
+		叠加性
+		同一个元素，被多个样式规则指定。
+		优先级
+		因为css的继承性和叠加性，就有了css优先级的概念。	
+	</p>
+</body>
+</html>
